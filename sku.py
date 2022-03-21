@@ -15,10 +15,11 @@ class Sku():
       self.selling_price = selling_price
 
       self.wh_loc_qty = [self.warehouse_location, self.quantity]
-  
+
+    #This is working***
     def add_stock(self,warehouse_loc, qty):
-      self.warehouse_location.append(warehouse_loc)
-      self.quantity.append(qty)
+      self.warehouse_location.append((warehouse_loc, qty))
+      # self.quantity.append(qty)
       
     # IM LOST
         

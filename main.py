@@ -15,10 +15,10 @@ meem = Vendor("MEEM","Jeff Bezos","Seattle","riv525584","1000 Top Dog Avenue","W
 raycon = Vendor("RAYCON","John F. Kennedy","Arlington","n456-3285","2400 1st Avenue","VA","76003","net60","5211258","6547412")
 rico = Vendor("RICO","George W. Carver","Diamond","45606","8790 Pindar Way","MO","64840","net14","9852025","6369874")
 
-
+# temp = [("MIA", 100)]
 
 #Skus
-pau100 = Sku("PAU100","Apple","Iphone100","1 lb","6x2x1",300, "Used","mia2","Black",unca, 79.99, 109.99)
+pau100 = Sku("PAU100","Apple","Iphone100","1 lb","6x2x1",300, "Used", [("MIA", 100)], "Black",unca, 79.99, 109.99)
 # pan200 = Sku("PAN200","Apple","Iphone200","1.2lb","6.5x2.5x0.15",500,"mia3","New","Red",unca,462,569.99)
 # psn300 = Sku("PSN300","Samsung","Galaxy Alpha","1.3 lb","5.5x2.5x0.15",200,"mia3","New","Coral",sellnet,100,609.99)
 # pnr400 = Sku("PNR400","Nokia","PhoneA","1 lb","6x2x0.10",500,"mia2","Refurbished","Blue",sellnet,70.54,198)
@@ -109,5 +109,5 @@ print(total) ''' #used to verify totals and average price
 print(pau100.warehouse_location)
 
 pau100.add_stock("rma",10)
-
+print(pau100.warehouse_location)
 # pau100.add_stock()

@@ -11,5 +11,5 @@ class Channel():
       self.content_manager = content_manager
       
 #TODO add a class atribute that will hold all SKUs sold on a channel. --DANIEL
-      
-      
+
+#???
