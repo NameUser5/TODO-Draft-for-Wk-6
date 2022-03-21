@@ -1,5 +1,5 @@
 class Sku():
-    def __init__(self, part_number, manufacturer, model, weight, dimension, quantity, condition, warehouse_location = [], color="", vendor="", cost=0, selling_price=0):
+    def __init__(self, part_number, manufacturer, model, weight, dimension, quantity, condition, warehouse_location = [], color="", vendor="", cost=0, selling_price=0, wh_loc_qty=[] ):
         
       self.part_number = part_number
       self.manufacturer = manufacturer
@@ -14,12 +14,15 @@ class Sku():
       self.cost = cost
       self.selling_price = selling_price
 
-      def add_stock(self,warehouse_loc,qty):
-        self.warehouse_location.append((warehouse_loc,qty))
-
+      self.wh_loc_qty = [self.warehouse_location, self.quantity]
+  
+    def add_stock(self,warehouse_loc, qty):
+      self.warehouse_location.append(warehouse_loc)
+      self.quantity.append(qty)
+      
+    # IM LOST
         
       # skus = []
-
       # warehouses = []
       
       # def print_inventory(skus):
